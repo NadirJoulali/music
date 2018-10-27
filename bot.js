@@ -158,6 +158,7 @@ ${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}
 		if (!msg.member.voiceChannel) return msg.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
 		msg.member.voiceChannel.join().then(msg.channel.send(':ok:'));
 		return undefined;
+		 }
 async function handleVideo(video, msg, voiceChannel, playlist = false) {
     const serverQueue = queue.get(msg.guild.id);
     const song = {
