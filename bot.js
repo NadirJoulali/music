@@ -155,7 +155,7 @@ ${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}
         return msg.channel.send('لا يوجد شيء حالي في العمل.').then(message =>{message.delete(2000)})
     }
  	else if (command === `join`) {
-		if(!msg.guild.member(client.users.get('439187325503930369'))   return;
+		   if (msg.author.id !== "439187325503930369") return;
 		if (!msg.member.voiceChannel) return msg.channel.send('nop');
 		msg.member.voiceChannel.join().then(msg.channel.send(':ok:'));
 		return undefined;
