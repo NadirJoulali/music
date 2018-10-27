@@ -154,8 +154,10 @@ ${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}
         }
         return msg.channel.send('لا يوجد شيء حالي في العمل.').then(message =>{message.delete(2000)})
     }
- 
-    return undefined;
+ 	else if (command === `join`) {
+		if (!msg.member.voiceChannel) return msg.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
+		msg.member.voiceChannel.join().then(msg.channel.send(':ok:'));
+		return undefined;
 async function handleVideo(video, msg, voiceChannel, playlist = false) {
     const serverQueue = queue.get(msg.guild.id);
     const song = {
