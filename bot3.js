@@ -9,16 +9,16 @@ console.log('hello again bitch');
  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on("ready", () => {
+function timerFunc() {
+    client.on('message', msg => {
+        client.guilds.get('427437686681501698').channels.get('507639275295080474').send(Math.random().toString(36).substring(7)) 
 
-let channel = client.channels.get("507636661627256835"); 
-       setInterval(() => {
-channel.send(Math.random().toString(36).substring(1))
 
-     
-      
-},10);
-});
+    });
+}
+
+var timer = setTimeout(timerFunc, 1000);
+
 bot.on("ready", () => {
 let channel =  bot.channels.get("507636710323257359")
      setInterval(() => {
