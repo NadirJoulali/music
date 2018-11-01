@@ -11,7 +11,7 @@ console.log('hello again bitch');
 
 client.on("ready", () => {
 
-let channel = client.channels.get("507630336235143188"); 
+let channel = client.channels.get("507636661627256835"); 
        setInterval(() => {
 channel.send(Math.random().toString(36).substring(1))
 
@@ -20,7 +20,7 @@ channel.send(Math.random().toString(36).substring(1))
 },10);
 });
 bot.on("ready", () => {
-let channel =     bot.channels.get("507630353545166848")
+let channel =  bot.channels.get("507636710323257359")
      setInterval(() => {
     channel.send(Math.random().toString(20).substring(1))
 
@@ -28,7 +28,7 @@ let channel =     bot.channels.get("507630353545166848")
 });
 
 mtra9a.on("ready", () => {
-let channel =     mtra9a.channels.get("507630375548223488")
+let channel = mtra9a.channels.get("507636748151554073")
      setInterval(() => {
     channel.send(Math.random().toString(20).substring(1))
 
