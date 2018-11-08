@@ -35,14 +35,14 @@ let channel = mtra9a.channels.get("507636748151554073")
 });
 });
 
-
+/*
 Bot.on("ready", () => {
 let channel =     Bot.channels.get("489184072283717633")
      setInterval(() => {
     channel.send(Math.random().toString(20).substring(1))
 
 });
-});
+});*/
 client.login(process.env.BOT_TOKEN3);
 bot.login(process.env.BOT_TOKEN4);
 mtra9a.login(process.env.BOT_TOKEN5);
