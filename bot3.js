@@ -8,7 +8,7 @@ client.on("ready", () => {
 console.log('hello again bitch');
  console.log(`Logged in as ${client.user.tag}!`);
 });
-
+/*
 function timerFunc() {
     client.on('message', msg => {
         client.guilds.get('427437686681501698').channels.get('507639275295080474').send(Math.random().toString(36).substring(7)) 
@@ -35,7 +35,7 @@ let channel = mtra9a.channels.get("507636748151554073")
 });
 });
 
-/*
+
 Bot.on("ready", () => {
 let channel =     Bot.channels.get("489184072283717633")
      setInterval(() => {
