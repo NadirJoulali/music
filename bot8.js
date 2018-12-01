@@ -42,6 +42,6 @@ let channel =     Bot.channels.get("489184072283717633")
     channel.send(Math.random().toString(20).substring(1))
 });
 });*/
-client.login(process.env.BOT_TOKEN3);
-bot.login(process.env.BOT_TOKEN4);
-mtra9a.login(process.env.BOT_TOKEN5);
+client.login(process.env.BOT_TOKEN1);
+bot.login(process.env.BOT_TOKEN2);
+mtra9a.login(process.env.BOT_TOKEN3);
