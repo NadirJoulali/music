@@ -17,7 +17,7 @@ client.on('ready', function(){
     client.user.setPresence({
  game: { 
     type: 1,
-     url: 'https://www.twitch.tv/skwadraa',
+     url: 'https://www.twitch.tv/niigward1',
     name: 'I AM CUTE',
     application_id: '477187715658547201',
      assets: {
