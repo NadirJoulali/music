@@ -108,6 +108,11 @@ ${videos.map(video2 => `[\`${++index}\`]${video2.title}`).join('\n')}**`).then(m
         serverQueue.songs = [];
         serverQueue.connection.dispatcher.end('تم إيقآف هذآ المقطع').then(message =>{message.delete(2000)})
         return undefined;
+	    } else if (command === `leave`) {
+         if (!msg.member.voiceChannel) return msg.reply('**you are not in a voice channel**').then(message =>{message.delete(5000)})
+      msg.reply(':name_badge:').then(message =>{message.delete(5000)})
+        if (msg.guild.voiceConnection) msg.guild.voiceConnection.disconnect();
+	  return undefined;	    
     } else if (command === `vol`) {
         if (!msg.member.voiceChannel) return msg.channel.send('أنت لست بروم صوتي .').then(message =>{message.delete(2000)})
         if (!serverQueue) return msg.channel.send('لا يوجد شيء شغآل.').then(message =>{message.delete(2000)})
