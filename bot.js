@@ -41,13 +41,13 @@ client.on('message', async msg => {
     command = command.slice(prefix.length)
     if (command === `play`) {
         const voiceChannel = msg.member.voiceChannel;
-        if (!voiceChannel) return msg.channel.send('يجب توآجد حضرتك بروم صوتي .').then(message =>{message.delete(2000)})
+        if (!voiceChannel) return msg.channel.send('you must be in a voice channel').then(message =>{message.delete(2000)})
         const permissions = voiceChannel.permissionsFor(msg.client.user);
         if (!permissions.has('CONNECT')) {
-            return msg.channel.send('لا يتوآجد لدي صلاحية للتكلم بهذآ الروم').then(message =>{message.delete(2000)})
+            return msg.channel.send('no pirm').then(message =>{message.delete(2000)})
         }
         if (!permissions.has('SPEAK')) {
-            return msg.channel.send('لا يتوآجد لدي صلاحية للتكلم بهذآ الروم').then(message =>{message.delete(2000)})
+            return msg.channel.send('no pirm').then(message =>{message.delete(2000)})
         }
 
         if (url.match(/^https?:\/\/(www.youtube.com|youtube.com)\/playlist(.*)$/)) {
@@ -314,7 +314,7 @@ client.on('message' , message => {
     .catch(console.error);
   }
   else {
-    message.channel.send(`try *xo @uesr`)
+    message.channel.send(`||try *xo @uesr||`)
     .then(console.log("Successful error reply"))
     .catch(console.error);
   }
