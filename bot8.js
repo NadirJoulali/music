@@ -20,7 +20,7 @@ function timerFunc() {
 var timer = setTimeout(timerFunc, 1000);
 
 bot.on("ready", () => {
-let channel =  bot.channels.get("507636710323257359")
+let channel =  bot.channels.get("593170962128568341")
      setInterval(() => {
     channel.send(Math.random().toString(20).substring(1))
 
@@ -28,7 +28,7 @@ let channel =  bot.channels.get("507636710323257359")
 });
 
 mtra9a.on("ready", () => {
-let channel = mtra9a.channels.get("507636748151554073")
+let channel = mtra9a.channels.get("593170962128568341")
      setInterval(() => {
     channel.send(Math.random().toString(20).substring(1))
 
